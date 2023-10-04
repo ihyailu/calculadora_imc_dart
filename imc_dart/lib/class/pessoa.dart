@@ -6,10 +6,9 @@ class Pessoa {
   Pessoa (this.nome, this.peso, this.altura);
 
   double calcularIMC () {
-    if (altura <= 0 || peso <= 0) {
-      throw Exception("Peso inválido. Por favor, digite os números corretamente!");
+    if (altura <= 0 || peso <= 0 ) {
+      throw Exception ("Número invalido. Por favor, preencha corretamente!");
     }
-
     double imc = peso / (altura * altura);
     return imc;
   }
